@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  /* aqui tem como colocar as cores que vou usar */
+  --color-orange: #ED4D1B;
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+body {
+  background: linear-gradient(90deg, #FFE7D1 0%, #FFF2E5 100%);
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+
+}
+
+header,
+.c1,
+.c2,
+footer {
+  border-style: solid;
+  border-width: 0 .1rem .1rem .1rem;
+  padding: 1.25rem;
+}
+
+header img {
+  display: block;
+  margin: 1rem auto;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem auto 0;
+  
+}
+
+nav a {
+  color: #000;
+  font-size: 1.25rem;
+  padding: .5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header nav a:nth-child(2n-1) {
+  text-align: right;
+}
+
+.button {
+  background-color: #ED4D1B;
+  color: #000;
+  border: 2px solid #000;
+  font-size: 1.25rem;
+  box-shadow: .4rem .4rem #000;
+  /* efeito */
+  display: block;
+  padding: .75rem  1rem;
+  max-width: 16.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#bw{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mg{
+  margin: auto;
+}
+.mt{
+  margin-top: 1rem;
+}
+.mb{
+  margin-bottom : 1rem;
+}
+
+#b {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c1 {
+  padding-bottom: 16rem;
+  padding-right: 0;
+}
+
+.c1 img {
+  display: block;
+  margin: 1.25rem 0 0 auto;
+  /* para jogar a imagem pra direita */
+  max-width: 100%;
+  /* a imagem vai ocupar 100% quando ela estiver pequena*/
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 105%;
+}
+
+h1 span {
+  color: #ED4D1B;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.c1 p {
+  font-size: 1.25rem;
+  padding-right: 1.25rem;
+  }
+
+  
+.c1 .button {
+  display: block;
+  position: relative;
+}
+.c1 .button::after{
+  content: '';
+  background-image: url(./acents/arrow-curve.svg);
+  position: absolute;
+  right: -4rem;
+  height: 48px;
+  width: 132px;
+  top: 5rem;
+}
+
+
+
+.c1 .decoration{
+  display: block;
+  position: relative;
+}
+.c1 .decoration::after{
+  content: '';
+  background-image: url(./acents/three-dashes.svg);
+  position: absolute;
+  height: 35.843px;
+  width: 40.259px;
+  top: -0.85rem;
+}
+
+.c2{
+  padding-bottom:3rem ;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column; 
+  align-items: start;
+  gap: 1.25rem;
+  margin-top: -14rem;
+}
+
+.box1 {
+  background-color: #ED4D1B;
+  border: 2px solid #000;
+  box-shadow: .4rem .4rem 0 #000;
+  max-width: 17rem;
+  padding: 2rem 0 0 2rem;
+}
+
+.box1:nth-child(2n) {
+  align-self: end;
+  background: #FF9A3C;
+}
+
+.box1 a {
+  display: block;
+  margin: 3rem 0 0 auto;
+  width: fit-content;
+}
+
+/* .c2{
+  margin-top: -16rem;
+}
+
+.box2{
+  background-color: #FF9A3C;
+  align-self: flex-end;
+} */
+
+
+.c2 h1,
+.c2 .button {
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+.c2 .button img {
+  width: 2rem;
+}
+
+footer p {
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.img-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+
+@media screen and (min-width: 700px) {
+
+  header nav {
+    display: block;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .box1:nth-child(2n) {
+    margin-top: 2.5rem;
+  }
+}
+
+  @media screen and (min-width: 800px){
+    header div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img,
+    header nav,
+    header .button{
+      margin: 0;
+    }
+
+  }
+
+  @media screen and (min-width :72rem){
+    .container{
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 72rem;
+    }
+    
+    .container.row-reverse{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  footer{
+    background-color: #FF9A3C;
+    border: solid black;
+  }
