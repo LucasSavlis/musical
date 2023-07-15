@@ -92,8 +92,9 @@ header nav a:nth-child(2n-1) {
 }
 
 .c1 {
-  padding-bottom: 16rem;
+  padding-bottom: 22rem;
   padding-right: 0;
+
 }
 
 .c1 img {
@@ -135,6 +136,7 @@ h2 {
   height: 48px;
   width: 132px;
   top: 5rem;
+  
 }
 
 
@@ -231,6 +233,11 @@ footer p {
   .box1:nth-child(2n) {
     margin-top: 2.5rem;
   }
+  .c1 {
+    padding-bottom: 14rem;
+    padding-right: 0;
+  
+  }
 }
 
   @media screen and (min-width: 800px){
@@ -260,6 +267,7 @@ footer p {
       flex-direction: row-reverse;
     }
   }
+
 
   footer{
     background-color: #FF9A3C;
